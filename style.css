@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-size: 10px;
+    font-family:sans-serif;
+}
+
+.container-fluid{
+    padding: 0 !important;
+    background-image: url('images/background_img.jpg');
+    object-fit: fill;
+}
+
+/*background img*/
+header .navbar{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 4.4rem;    
+    background-position-y: -132px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    align-items:center;
+    align-content: flex-start;
+    
+}
+
+.logo img{
+    margin-left: 1rem;
+    width: 15rem;
+}
+
+/*sign in and language select div*/
+.right-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    position: relative;
+    right: 13px;
+    bottom: 5px;
+}
+
+
+/*navbar - language select part*/
+.languages{
+    display: flex;
+    align-items: center;
+    padding: 7px 3px;
+    border-radius: 2px;
+    border: white 1.5px solid;
+    color: white;
+    background:  #020D16;
+}
+
+
+/*navbar - select box*/
+.languages select{
+    background: transparent;
+    color: white;
+    font-size: 13px;
+    width: 65px;
+}
+
+/*navbar - select box*/
+.languages select:hover{
+    background:#020D16;
+}
+
+
+.sign-in button{
+    text-align: center;
+    padding: 3px 12px;
+    background-color: #e50914;
+    font-size: 15px;
+    font-family: 'Netflix Sans';font-weight: 400;
+    color: white;
+}
+
+
+.header-middle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30rem;
+    margin-top:5rem;
+    padding-top: 3rem;
+    padding-bottom: 11rem;
+    border-bottom: #222222 9px solid;
+}
+
+.middle-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;  
+    padding: 50px;
+    
+
+}
+
+.middle-content h1{
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:5.8rem;
+    line-height:6rem;
+    font-weight:700;
+    text-align: center;
+    
+}
+
+.middle-content h2{
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:2.4rem;
+    line-height:2.5rem;
+    font-weight:400;
+    text-align: center;
+    margin-top: 2rem;    
+}
+
+.middle-content h3{
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:1.7rem;
+    line-height:2rem;
+    font-weight:400;
+    text-align: center;
+    margin-top: 2rem;    
+}
+
+.header-form{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.header-form input{
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: start;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 40px;
+    min-width: 46rem;
+    min-height: 6.2rem;
+    color: #757575;
+}
+.header-form button{
+    background-color: #E30913;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 500;
+    border: 1px solid #E30913;
+    min-width: 22rem;
+    min-height: 6.2rem;
+    color: white;
+    
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    *{
+        font-size: 10px;  
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    *{
+        font-size: 8px;  
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    *{
+        font-size: 6px;  
+    }
+    .header-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .header-form button{
+        width: 5rem;
+    }
+    .header-form input{
+        width: 100%;
+    }
+    .right-side{
+        margin-top: 4rem;
+        align-content:center;
+    }
+
+    .header-middle{
+        margin-top: 0rem;
+        padding-top: 0rem;
+    }
+
+
+
+  }
+  @media only screen and (max-width: 500px) {
+    *{
+        font-size: 5px;  
+    }
+    header .navbar{
+        align-content: center !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    *{
+        font-size: 4px;  
+    }
+    header .navbar{
+        justify-content: center !important;
+    }
+  }
+
+
+
+
+
+/*fonts*/
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+.netflix-sans-font-loaded {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+    font-family: NKufi,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+    font-family: GraphikTH,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+
+
+
+
+
+
