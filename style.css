@@ -161,6 +161,10 @@ header .navbar{
     
 }
 
+.header-form button img{
+    height: 2rem;
+}
+
 
 
 
@@ -172,6 +176,16 @@ header .navbar{
   @media only screen and (max-width: 992px) {
     *{
         font-size: 8px;  
+    }
+
+    .middle-content h3{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .middle-content h2{
+        font-size: 4rem;
+        line-height: 4rem;
     }
   }
   @media only screen and (max-width: 768px) {
@@ -201,6 +215,16 @@ header .navbar{
         padding-top: 0rem;
     }
 
+    .middle-content h3{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .middle-content h2{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
 
 
   }
@@ -212,6 +236,15 @@ header .navbar{
         align-content: center !important;
         flex-direction: column !important;
         justify-content: center !important;
+    }
+    .middle-content h3{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .middle-content h2{
+        font-size: 4rem;
+        line-height: 4rem;
     }
   }
   @media only screen and (max-width: 300px) {
