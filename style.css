@@ -3,13 +3,15 @@
     padding: 0;
     box-sizing:border-box;
     font-size: 10px;
-    font-family:sans-serif;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container-fluid{
+.header{
     padding: 0 !important;
     background-image: url('images/background_img.jpg');
     object-fit: fill;
+    background-repeat: no-repeat;
+    border-bottom: #222222 9px solid;
 }
 
 /*background img*/
@@ -23,12 +25,14 @@ header .navbar{
     height: 100%;
     align-items:center;
     align-content: flex-start;
+    overflow: hidden;
     
 }
 
 .logo img{
     margin-left: 1rem;
     width: 15rem;
+    min-width: 90px;
 }
 
 /*sign in and language select div*/
@@ -78,17 +82,15 @@ header .navbar{
     color: white;
 }
 
-
+/*middle, input mail and title area*/
 .header-middle{
     width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-bottom: 30rem;
     margin-top:5rem;
     padding-top: 3rem;
-    padding-bottom: 11rem;
-    border-bottom: #222222 9px solid;
+    padding-bottom: 11rem;  
 }
 
 .middle-content{
@@ -96,50 +98,45 @@ header .navbar{
     flex-direction: column;
     justify-content: center;
     align-content: center;  
-    padding: 50px;
-    
+    padding: 50px;   
 
 }
-
+/*h1 Text*/
 .middle-content h1{
     color: white;
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:5.8rem;
     line-height:6rem;
     font-weight:700;
     text-align: center;
     
 }
-
+/*h2 Text*/
 .middle-content h2{
     color: white;
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:2.4rem;
     line-height:2.5rem;
     font-weight:400;
     text-align: center;
     margin-top: 2rem;    
 }
-
+/*h3 Text*/
 .middle-content h3{
     color: white;
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:1.7rem;
     line-height:2rem;
     font-weight:400;
     text-align: center;
     margin-top: 2rem;    
 }
-
+/*middle area form*/
 .header-form{
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-content: center;
 }
-
+/*header input*/
 .header-form input{
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: start;
     padding-left: 1rem;
     font-size: 1.5rem;
@@ -148,9 +145,9 @@ header .navbar{
     min-height: 6.2rem;
     color: #757575;
 }
+/*header button*/
 .header-form button{
     background-color: #E30913;
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     font-size: 2.7rem;
     font-weight: 500;
@@ -160,108 +157,128 @@ header .navbar{
     color: white;
     
 }
-
+/*header button row icon*/
 .header-form button img{
     height: 2rem;
 }
 
+/*##################  BODY  ##################*/
 
+/*Middle rows order*/
+body .container-fluid{
+    display: flex;
+    flex-direction:column;
+    
+}
+/*Middle rows inside 2 section configure*/
+.row{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items: center; 
+    background-color: black;
+    justify-content: center;
+    padding-bottom: 5rem;
+    border-bottom: #222222 9px solid;
+    
+    
+}
+/*Middle rows configure*/
+.row{
+    background-color: black;
+    justify-content: center;  
+    padding: 0 1rem 5rem 1rem;
+    display: flex;
+    justify-content: space-around;
 
+}
+/*middle text container*/
+.text-container{
+    display: flex;
+    justify-content: center;
+}
+/*middle text contain div*/
+.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 550px;
+    margin: 3rem 0;
+    
+}
+/*first row right side container*/
+.picture{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
 
-@media only screen and (max-width: 1200px) {
+/*first row tv size*/
+.picture img{
+    max-width: 75%;
+    width: 100%;
+}
+
+/*middile text size and configure*/
+.texts h1{
+    display: inline-block;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 6rem;
+    color: white;
+}
+/*middile text size and configure*/
+.texts h2{
+    display: inline-block;
+    font-size: 2.6rem;
+    font-weight: 400; 
+    color: white;
+}
+
+/*we controlled first row inside the screen size*/
+@media only screen and (min-width: 993px) {
+    
     *{
-        font-size: 10px;  
+        font-size: 10px;
+    }
+    .picture img{
+        max-width: 550px;
+        width: 100%;
     }
   }
   @media only screen and (max-width: 992px) {
     *{
-        font-size: 8px;  
-    }
-
-    .middle-content h3{
-        font-size: 3rem;
-        line-height: 4rem;
-    }
-
-    .middle-content h2{
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 10px;
     }
   }
   @media only screen and (max-width: 768px) {
     *{
-        font-size: 6px;  
+        font-size: 7px;
     }
-    .header-form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-    .header-form button{
-        width: 5rem;
-    }
-    .header-form input{
-        width: 100%;
-    }
-    .right-side{
-        margin-top: 4rem;
-        align-content:center;
-    }
-
-    .header-middle{
-        margin-top: 0rem;
-        padding-top: 0rem;
-    }
-
-    .middle-content h3{
-        font-size: 3rem;
-        line-height: 4rem;
-    }
-
-    .middle-content h2{
-        font-size: 4rem;
-        line-height: 4rem;
-    }
-
-
-
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 576px) {
     *{
-        font-size: 5px;  
+        font-size: 6px;
     }
-    header .navbar{
-        align-content: center !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-    }
-    .middle-content h3{
-        font-size: 3rem;
-        line-height: 4rem;
+  }
+  @media only screen and (max-width: 450px) {
+    *{
+        font-size: 4px;
+    } 
+
+  }
+  @media only screen and (max-width: 250px) {
+    *{
+        font-size: 2px;
     }
 
-    .middle-content h2{
-        font-size: 4rem;
-        line-height: 4rem;
-    }
-  }
-  @media only screen and (max-width: 300px) {
-    *{
-        font-size: 4px;  
-    }
-    header .navbar{
-        justify-content: center !important;
-    }
-  }
 
 
 
 
 
 /*fonts*/
-
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 100;
