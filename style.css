@@ -228,7 +228,7 @@ body .container-fluid{
     z-index: 2;
 }
 /*first row tv backend video size*/
-.picture video{
+.video-1 video{
     max-width: 80%;
     max-height: 50%;
     transform: translate(0%,35%);
@@ -294,6 +294,21 @@ max-width: 53px!important;
 object-fit:contain;
 }
 
+.video-2 img{
+    z-index: 9;
+}
+
+.video-2 video{
+    max-width: 40% ;
+    max-height: 43%;
+    position: absolute;
+    z-index: 6;
+    width: 50%;
+    height: 60%;
+    object-fit:cover;
+    transform: translate(0%,22%); 
+}
+
 /*middile text size and configure*/
 .texts h1{
     display: inline-block;
@@ -311,20 +326,22 @@ object-fit:contain;
 }
 
 /*we controlled first row inside the screen size*/
-@media only screen and (min-width: 993px) {  
+@media only screen and (min-width: 992px) {  
     .picture img{
         max-width: 550px;
         width: 100%;
     }
-    .picture video{
-        -webkit-transform: translate(17%,35%); 
+    .video-1 video{
         transform: translate(17%,35%); 
     }
-  }
-  @media only screen and (max-width: 992px) {
-    *{
-        font-size: 10px;
+    .video-2 video{
+        max-width: 345px ;
+        max-height: 200px;
+        transform: translate(27%,15%); 
+        width: 59%;
+        height: 50%;
     }
+    
   }
   @media only screen and (max-width: 768px) {
     *{
