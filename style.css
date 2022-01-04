@@ -325,6 +325,73 @@ object-fit:contain;
     color: white;
 }
 
+.title-bottom{
+    margin: 5rem 0;
+    margin-top: 7rem;
+}
+.title-bottom h1{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+}
+/*Drop down each row*/
+.card{
+    width: 100% !important;
+    max-width: 800px !important;
+    margin: auto;
+    background: transparent !important;
+    margin-top: 0.5rem;
+    user-select: none;
+}
+/*Drop down each row when hover on*/
+.card:hover{
+    cursor: pointer;
+}
+/*Drop Down Question title part*/
+.card-header{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    user-select: none;
+}
+/*Drop Down style*/
+.acordion-label, .acordion-label button, .acordion-text, .acordion-text p{
+    font-size: 2.6rem !important;
+    font-weight: 400 !important;
+    color: white !important;
+    background: rgb(48,48,48) !important;
+    text-decoration:none !important;
+    padding: 0.7rem 2rem !important;
+    user-select: none;
+}
+/*Drop Down X icon*/
+.card-header img{
+    width: 3rem !important;
+    height: 3rem !important;
+    user-select: none;
+}
+/*Drop Down javascript added class*/
+.clicked{
+    transform: rotate(45deg);
+}
+
+/*between dropdown and footer section. text and email part*/
+.footer-up p{
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+/*between dropdown and footer section. text and email part*/
+.footer-up form{
+    transform: scale(110%);
+    margin-bottom: 4rem;
+}
+
+
 /*we controlled first row inside the screen size*/
 @media only screen and (min-width: 992px) {  
     .picture img{
@@ -357,17 +424,12 @@ object-fit:contain;
     *{
         font-size: 4px;
     } 
-
   }
   @media only screen and (max-width: 250px) {
     *{
         font-size: 2px;
     }
   }
-
-
-
-
 
 /*fonts*/
 @font-face {
