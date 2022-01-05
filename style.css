@@ -6,6 +6,10 @@
     font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+html{
+    background: black;
+}
+
 .header{
     padding: 0 !important;
     background-image: url('images/background_img.jpg');
@@ -81,6 +85,10 @@ header .navbar{
     font-family: 'Netflix Sans';font-weight: 400;
     color: white;
 }
+.sign-in button:hover{
+    color: white;
+}
+
 
 /*middle, input mail and title area*/
 .header-middle{
@@ -134,6 +142,7 @@ header .navbar{
     display: flex;
     justify-content: center;
     align-content: center;
+    transform: scale(110%);
 }
 /*header input*/
 .header-form input{
@@ -155,8 +164,11 @@ header .navbar{
     min-width: 22rem;
     min-height: 6.2rem;
     color: white;
-    
 }
+.header-form button:hover{
+    background-color: #f40612;
+}
+
 /*header button row icon*/
 .header-form button img{
     height: 2rem;
@@ -391,6 +403,49 @@ object-fit:contain;
     margin-bottom: 4rem;
 }
 
+
+/*##################  FOOTER  ##################*/
+footer{
+    background: black;
+}
+
+footer p{
+    color: gray;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 25%;
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+}
+
+.footer-ul{
+    margin-left: 25%;
+    margin-bottom: 3rem;
+}
+.footer-li{
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    margin-right: 1.1rem;
+    width: 23%;
+    min-width: 100px;
+}
+.footer-a{
+   font-size: 1.4rem;
+   color: gray;
+   font-weight: 400;
+    
+}
+.footer-a:hover{
+    color: gray;
+}
+.language-select{
+    display: inline-block;
+    transform: scale(130%);
+    margin-left: 25%;
+    padding-bottom: 30px;
+}
+
+/*##################  FONTS  ##################*/
 
 /*we controlled first row inside the screen size*/
 @media only screen and (min-width: 992px) {  
